@@ -1,8 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System;
 
-namespace cp5_dotnet.model
+namespace webapi_dotnet.model
 {
     public class Livro
     {
