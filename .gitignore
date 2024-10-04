@@ -1,0 +1,50 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build Folders
+bin/
+obj/
+out/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# User-specific files
+*.db
+*.log
+
+# DotNet specific files
+project.lock.json
+project.fragment.lock.json
+project.json
+*.xproj
+*.json
+*.csproj.user
+
+# Publish Output
+publish/
+
+# Backup & cache files
+*.bak
+*.tmp
+*.cache
+
+# Other
+*.DS_Store
+*.swp
+*.swo
