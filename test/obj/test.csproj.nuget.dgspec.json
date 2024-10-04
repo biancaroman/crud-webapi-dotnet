@@ -4,14 +4,171 @@
     "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj": {}
   },
   "projects": {
-    "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj": {
+    "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj",
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj",
+        "projectName": "data",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj",
         "packagesPath": "/Users/biancaroman/.nuget/packages/",
-        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/test/obj/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj",
+        "projectName": "LivrosApi",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj",
+        "packagesPath": "/Users/biancaroman/.nuget/packages/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+        "projectName": "model",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+        "packagesPath": "/Users/biancaroman/.nuget/packages/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
@@ -43,9 +200,165 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj",
+        "projectName": "repositories",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj",
+        "packagesPath": "/Users/biancaroman/.nuget/packages/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.29.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj",
+        "projectName": "test",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/test/test.csproj",
+        "packagesPath": "/Users/biancaroman/.nuget/packages/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              },
+              "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -53,7 +366,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.9.2, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
