@@ -1,6 +1,4 @@
 ﻿using MongoDB.Bson;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using webapi_dotnet.model;
 
 namespace webapi_dotnet.repositories
