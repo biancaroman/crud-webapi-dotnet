@@ -1,50 +1,30 @@
-# Visual Studio
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Build Folders
+# Pastas de compilação
 bin/
 obj/
-out/
 
-# NuGet Packages
-*.nupkg
-*.snupkg
-packages/
-*.nuspec
-
-# Rider
-.idea/
-*.sln.iml
-
-# Visual Studio Code
+# Arquivos do Visual Studio
 .vscode/
-.history/
+.vs/
 
-# User-specific files
-*.db
+# Arquivos de dependências e pacotes
+*.nuget/
+*.user
+*.suo
+*.dbmdl
+*.jfm
+
+# Arquivos de logs
 *.log
 
-# DotNet specific files
-project.lock.json
-project.fragment.lock.json
-project.json
-*.xproj
-*.json
-*.csproj.user
+# Configurações locais
+*.config
+*.local
 
-# Publish Output
-publish/
-
-# Backup & cache files
-*.bak
-*.tmp
+# Build outputs
+*.dll
+*.exe
+*.pdb
 *.cache
 
-# Other
-*.DS_Store
-*.swp
-*.swo
+# Teste e cobertura
+TestResults/
