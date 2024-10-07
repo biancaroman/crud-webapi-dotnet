@@ -21,12 +21,12 @@ namespace webapi_dotnet.repositories
 
         public async Task<Livro> GetByIdAsync(ObjectId id)
         {
-            return await _livros.Find<Livro>(l => l.Id == id).FirstOrDefaultAsync();
+            return await _livros.Find(l => l.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<Livro> GetByPublicIdAsync(string publicId) 
+        public async Task<Livro?> GetByPublicIdAsync(string publicId) 
         {
-            return await _livros.Find<Livro>(l => l.PublicId == publicId).FirstOrDefaultAsync();
+            return await _livros.Find(l => l.PublicId == publicId).FirstOrDefaultAsync();
         }
 
         public async Task CreateAsync(Livro livro)

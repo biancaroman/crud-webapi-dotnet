@@ -9,6 +9,7 @@ namespace webapi_dotnet.test
 {
     public class LivrosControllerTests
     {
+         // Testa se o método Get retorna uma lista de livros corretamente.
         [Fact]
         public async Task Get_ReturnsListOfLivros()
         {
@@ -23,11 +24,12 @@ namespace webapi_dotnet.test
             Assert.IsType<List<Livro>>(okResult.Value);
         }
 
+         // Testa se o método GetByPublicId retorna NotFound quando o ID público é inválido.
         [Fact]
         public async Task GetByPublicId_ReturnsNotFound_WhenPublicIdIsInvalid()
         {
             var mockRepo = new Mock<ILivroRepository>();
-            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro)null);
+            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro?)null);
 
             var controller = new LivrosController(mockRepo.Object);
 
@@ -36,6 +38,7 @@ namespace webapi_dotnet.test
             Assert.IsType<NotFoundResult>(result);
         }
 
+         // Testa se o método Create retorna CreatedAtAction quando um livro é criado com sucesso.
         [Fact]
         public async Task Create_ReturnsCreatedAtAction_WhenLivroIsCreated()
         {
@@ -61,13 +64,14 @@ namespace webapi_dotnet.test
             Assert.Equal(publicId, createdLivro.PublicId); 
         }
 
+         // Testa se o método Update retorna NotFound quando o livro não existe.
         [Fact]
         public async Task Update_ReturnsNotFound_WhenLivroDoesNotExist()
         {
             var mockRepo = new Mock<ILivroRepository>();
             var livroId = ObjectId.GenerateNewId();
             var livro = new Livro { Id = livroId, Titulo = "Livro Teste", Autor = "Autor Teste", AnoPublicacao = 2023, Genero = "Ficção" };
-            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro)null);
+            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro?)null);
 
             var controller = new LivrosController(mockRepo.Object);
 
@@ -76,6 +80,7 @@ namespace webapi_dotnet.test
             Assert.IsType<NotFoundResult>(result);
         }
 
+        // Testa se o método Update retorna NoContent quando o livro é atualizado com sucesso.
         [Fact]
         public async Task Update_ReturnsNoContent_WhenLivroIsUpdated()
         {
@@ -92,11 +97,12 @@ namespace webapi_dotnet.test
             Assert.IsType<NoContentResult>(result);
         }
 
+        // Testa se o método Delete retorna NotFound quando o ID público é inválido.
         [Fact]
         public async Task Delete_ReturnsNotFound_WhenPublicIdIsInvalid()
         {
             var mockRepo = new Mock<ILivroRepository>();
-            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro)null);
+            mockRepo.Setup(repo => repo.GetByPublicIdAsync("invalid-id")).ReturnsAsync((Livro?)null);
 
             var controller = new LivrosController(mockRepo.Object);
 
@@ -105,6 +111,7 @@ namespace webapi_dotnet.test
             Assert.IsType<NotFoundResult>(result);
         }
 
+        // Testa se o método Delete retorna NoContent quando o livro é excluído com sucesso.
         [Fact]
         public async Task Delete_ReturnsNoContent_WhenLivroIsDeleted()
         {

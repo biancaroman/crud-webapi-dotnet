@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj": {}
+    "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/repositories/repositories.csproj": {}
   },
   "projects": {
-    "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
+    "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj",
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/data.csproj",
         "projectName": "data",
-        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/data.csproj",
         "packagesPath": "/Users/biancaroman/.nuget/packages/",
-        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/obj/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
-                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
+    "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj",
         "projectName": "model",
-        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj",
         "packagesPath": "/Users/biancaroman/.nuget/packages/",
-        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/obj/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
@@ -140,14 +140,14 @@
         }
       }
     },
-    "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj": {
+    "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/repositories/repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj",
+        "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/repositories/repositories.csproj",
         "projectName": "repositories",
-        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/repositories.csproj",
+        "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/repositories/repositories.csproj",
         "packagesPath": "/Users/biancaroman/.nuget/packages/",
-        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/repositories/obj/",
+        "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/repositories/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/biancaroman/.nuget/NuGet/NuGet.Config"
@@ -162,11 +162,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj": {
-                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/data/data.csproj"
+              "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/data.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/data/data.csproj"
               },
-              "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj": {
-                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj"
+              "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj": {
+                "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj"
               }
             }
           }

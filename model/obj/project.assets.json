@@ -797,11 +797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+      "projectUniqueName": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj",
       "projectName": "model",
-      "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+      "projectPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj",
       "packagesPath": "/Users/biancaroman/.nuget/packages/",
-      "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/model/obj/",
+      "outputPath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/biancaroman/.nuget/NuGet/NuGet.Config"

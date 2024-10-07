@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7wYBBgIU+6bk7gHiQpx9QeNFtYwf+PAhEze46PJ0Hh0YqaEz61AzwOE2+lysF6GpgyOZlAsUfpC4n60CV6Vcyg==",
+  "dgSpecHash": "+DA2Vb3xsulwxuohlMca9ccdNWJrsssV9ZSoq6qkByQH8dV4T137Rj0ccTRywKkd/XvxozWpfRf7vjcODpSDAQ==",
   "success": true,
-  "projectFilePath": "/Users/biancaroman/Desktop/webapi-dotnet/LivrosApi/LivrosApi.csproj",
+  "projectFilePath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/LivrosApi/LivrosApi.csproj",
   "expectedPackageFiles": [
     "/Users/biancaroman/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/biancaroman/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0bjg2WDBI6aE4UiYvsW+0U5u89snLugpaDwzXqAuNWdpVmuNnyJMrjgphkgaG+pXccIfiFxS+r+OZ6UhoqiCYQ==",
+  "dgSpecHash": "ntxfOUw3JH7Tj6V+lG7BPq67mRqb/r+/vO2ef8zvJGWVoN7HRUZ+sI/lhD5Z7XkK+EyZuoD/9SX14NxNY8M5zw==",
   "success": true,
-  "projectFilePath": "/Users/biancaroman/Desktop/webapi-dotnet/model/model.csproj",
+  "projectFilePath": "/Users/biancaroman/Desktop/webapi-dotnet/crud-webapi-dotnet/model/model.csproj",
   "expectedPackageFiles": [
     "/Users/biancaroman/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/biancaroman/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
