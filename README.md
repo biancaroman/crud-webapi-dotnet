@@ -96,4 +96,7 @@ A documentação da API é gerada automaticamente com Swagger. Após iniciar a a
 http://localhost:5000/swagger
 ```
 
+## Link do Azure
+https://dev.azure.com/biancaroman1425/Projeto-CP5
+
 
