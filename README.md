@@ -59,4 +59,41 @@ Retorna um livro específico com base no ID público.
 POST /api/livros
 Cria um novo livro. Exemplo de corpo da requisição:
 
+```json
+{
+  "titulo": "Dom Quixote",
+  "autor": "Miguel de Cervantes",
+  "anoPublicacao": 1605,
+  "genero": "Ficção"
+}
+```
+
+PUT /api/livros/{publicId}
+Atualiza um livro existente. Exemplo de corpo da requisição:
+```json
+{
+  "titulo": "Don Quixote",
+  "autor": "Miguel de Cervantes",
+  "anoPublicacao": 1605,
+  "genero": "Ficção"
+}
+```
+DELETE /api/livros/{publicId}
+Remove um livro da coleção com base no ID público.
+
+
+## Testes
+Os testes unitários estão implementados no arquivo LivrosControllerTests.cs, usando Moq e Xunit para simular o repositório e validar os comportamentos do controlador.
+
+Para rodar os testes:
+```bash
+dotnet test
+```
+
+## Swagger
+A documentação da API é gerada automaticamente com Swagger. Após iniciar a aplicação em modo desenvolvimento, acesse o Swagger UI em:
+```bash
+http://localhost:5000/swagger
+```
+
 
