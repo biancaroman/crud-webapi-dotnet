@@ -29,3 +29,34 @@ Esta é uma aplicação ASP.NET Core Web API para gerenciar uma coleção de liv
    ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
    cd nome-do-repositorio
+
+2. **Configure o MongoDB**:
+   Certifique-se de que o MongoDB esteja rodando localmente ou em um servidor acessível e adicione as configurações de conexão no arquivo appsettings.json:
+   ```json
+   {
+     "MongoDbSettings": {
+       "ConnectionString": "mongodb://localhost:27017",
+       "DatabaseName": "LivrosDb"
+     }
+   }
+   
+3. **Restaurar pacotes NuGet:**
+   ```bash
+   dotnet restore
+
+4. **Executar a aplicação:**
+    ```bash
+    dotnet run
+
+## Endpoints da API
+
+GET /api/livros
+Retorna uma lista de todos os livros.
+
+GET /api/livros/{publicId}
+Retorna um livro específico com base no ID público.
+
+POST /api/livros
+Cria um novo livro. Exemplo de corpo da requisição:
+
+
