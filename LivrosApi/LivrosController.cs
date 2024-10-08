@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using webapi_dotnet.model;
-using webapi_dotnet.repositories;
+using model;
+using repositories;
 
-namespace webapi_dotnet.LivrosApi
+namespace LivrosApi
 {
     [ApiController]
     [Route("api/[controller]")]

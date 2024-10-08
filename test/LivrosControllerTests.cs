@@ -1,11 +1,11 @@
-using webapi_dotnet.LivrosApi;
-using webapi_dotnet.repositories;
-using webapi_dotnet.model;
+using LivrosApi;
+using repositories;
+using model;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using MongoDB.Bson;
 
-namespace webapi_dotnet.test
+namespace test
 {
     public class LivrosControllerTests
     {

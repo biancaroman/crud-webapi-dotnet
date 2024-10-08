@@ -1,8 +1,8 @@
 ﻿using MongoDB.Driver;
 using Microsoft.Extensions.Configuration;
-using webapi_dotnet.model;
+using model;
 
-namespace webapi_dotnet.data
+namespace data
 {
     public class MongoDbContext
     {

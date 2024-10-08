@@ -1,9 +1,9 @@
-using webapi_dotnet.model;
-using webapi_dotnet.data;
+using model;
+using data;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace webapi_dotnet.repositories
+namespace repositories
 {
     public class LivroRepository : ILivroRepository
     {

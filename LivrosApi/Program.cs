@@ -1,11 +1,10 @@
-using webapi_dotnet.data;
-using webapi_dotnet.repositories;
+using data;
+using repositories;
 using Microsoft.OpenApi.Models;
-using System.Reflection; // Para pegar o caminho do arquivo XML
+using System.Reflection; 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuração do Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -21,7 +20,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 
-    // Incluindo o caminho do arquivo XML de comentários
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
-using webapi_dotnet.model;
+using model;
 
-namespace webapi_dotnet.repositories
+namespace repositories
 {
     public interface ILivroRepository
     {
