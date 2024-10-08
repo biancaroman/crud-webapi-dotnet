@@ -20,9 +20,13 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 
+    // Geração de comentários XML para os modelos
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
+    
+    // Adiciona suporte para anotações de esquemas
+    c.EnableAnnotations();
 });
 
 builder.Services.AddSingleton<MongoDbContext>();

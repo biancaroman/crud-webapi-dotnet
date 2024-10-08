@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using model;
 using repositories;
+using Swashbuckle.AspNetCore.Annotations; 
 
 namespace LivrosApi
 {
@@ -24,6 +25,8 @@ namespace LivrosApi
         /// Você pode usar essa rota para visualizar todos os livros cadastrados.
         /// </remarks>
         [HttpGet]
+        [SwaggerResponse(200, "Lista de livros obtida com sucesso.", typeof(List<Livro>))] 
+        [SwaggerResponse(500, "Erro interno no servidor.")]
         public async Task<ActionResult<List<Livro>>> Get()
         {
             var livros = await _livroRepository.GetAllAsync();
@@ -40,6 +43,9 @@ namespace LivrosApi
         /// Caso o ID não seja encontrado, será retornado um código de status 404.
         /// </remarks>
         [HttpGet("{publicId}")]
+        [SwaggerResponse(200, "Livro encontrado.", typeof(Livro))]
+        [SwaggerResponse(404, "Livro não encontrado.")]
+        [SwaggerResponse(500, "Erro interno no servidor.")]
         public async Task<IActionResult> GetByPublicId(string publicId)
         {
             var livro = await _livroRepository.GetByPublicIdAsync(publicId);
@@ -63,7 +69,10 @@ namespace LivrosApi
         /// Se o modelo for inválido, um código de status 400 será retornado.
         /// </remarks>
         [HttpPost]
-        public async Task<ActionResult<Livro>> Create(Livro livro)
+        [SwaggerResponse(201, "Livro criado com sucesso.", typeof(Livro))]
+        [SwaggerResponse(400, "Dados inválidos fornecidos.")]
+        [SwaggerResponse(500, "Erro interno no servidor.")]
+        public async Task<ActionResult<Livro>> Create([FromBody] Livro livro)
         {
             if (!ModelState.IsValid)
             {
@@ -87,6 +96,9 @@ namespace LivrosApi
         /// Se o livro não for encontrado, um código de status 404 será retornado.
         /// </remarks>
         [HttpPut("{publicId}")]
+        [SwaggerResponse(204, "Livro atualizado com sucesso.")]
+        [SwaggerResponse(404, "Livro não encontrado.")]
+        [SwaggerResponse(500, "Erro interno no servidor.")]
         public async Task<IActionResult> Update(string publicId, Livro livro)
         {
             var existingLivro = await _livroRepository.GetByPublicIdAsync(publicId);
@@ -112,6 +124,9 @@ namespace LivrosApi
         /// Se o livro não for encontrado, um código de status 404 será retornado.
         /// </remarks>
         [HttpDelete("{publicId}")]
+        [SwaggerResponse(204, "Livro excluído com sucesso.")]
+        [SwaggerResponse(404, "Livro não encontrado.")]
+        [SwaggerResponse(500, "Erro interno no servidor.")]
         public async Task<IActionResult> Delete(string publicId)
         {
             var livro = await _livroRepository.GetByPublicIdAsync(publicId);
